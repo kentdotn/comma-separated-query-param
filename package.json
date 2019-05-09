@@ -1,6 +1,6 @@
 {
   "name": "comma-separated-query-param",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "query string parser which makes comma-separated string into array",
   "main": "build/index.js",
   "typings": "build/index.d.ts",

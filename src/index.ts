@@ -26,7 +26,7 @@ class CommaSeparatedParameterListParser {
 		Object.keys(req.query).forEach(key => {
 			if (this.isTarget(key)) {
 				const val = req.query[key];
-
+				if (typeof val === "object") return;
 				const values = (Array.isArray(val))
 					? val.map(e => this.split(e))
 						.reduce((acc, v) => acc.concat(v), [] as string[])
